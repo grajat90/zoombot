@@ -34,6 +34,12 @@
  - [chromedriver location] : path to the chromedriver file (defaults to the current directory of python script)
 - -h : headless mode, i.e., bot doesn't show a chrome window works in the background and exits the process once done. always include this tag at the absolute end only.
 
+Examples:
+
+> `$ python zoom_bot.py 123456789 john smith 45 -h`
+
+> `$ python zoom_bot.py https://us04web.zoom.us/j/123456789 john smith /usr/lib/chromium-browser/chromedriver`
+
 ** The order of arguments must be retained**
 ***
 
