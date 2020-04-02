@@ -33,7 +33,10 @@ site = 'https://zoom.us/wc/join/'+id
 
 try:
     if(not(sys.argv[ind+1]=='-h')):
-        chromedriver_location = sys.argv[ind+1]
+        if(float(sys.argv[ind])):
+            chromedriver_location = sys.argv[ind+1]
+        else:
+            chromedriver_location = sys.argv[ind]
     else:
         chromedriver_location = 'chromedriver'
 except:
